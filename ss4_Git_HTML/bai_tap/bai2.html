@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo CV</title>
+</head>
+<body>
+<h1 id="cv">CV</h1>
+<p>Họ và Tên: Nguyen Xuan Minh</p>
+<p>Địa chỉ: Sao Kim</p>
+<p>Số điện thoại: 035-913-7072</p>
+<p> Email:
+    <a href="https://www.google.com/intl/vi/gmail/about/" target="_blank">nguyenminhkupe123@gmail.com</a>
+</p>
+<button onclick="document.getElementById('myImage').src='1_2486117098089648848_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=rBq5yAVpXHMAX-wvmCk&_nc_ht=scohttps://i.pinimg.com/736x/79/2c/6e/792c6e90bf1fc3e00b7807aa895d119f.jp'"
+>Next</button>
+<img id="myImage" src="image/kamenrider.jpg" style="width: 150px; height: 170px">
+<button onclick="document.getElementById('myImage').src='image/kamenrider.jpg'">Return</button>
+<p>Học vấn: Trung Binh </p>
+<p>Bằng cấp:
+    <a href="https://ajc.hcma.vn/Uploaded/admin/2018_04_09/scan0311.jpg" target="_blank">
+        Bằng tiến sĩ
+    </a>
+</p>
+<p>Kỹ năng: Lập trình viên</p>
+<p>Kinh nghiệm: 1 năm trong nghề</p>
+<p>Định hướng phát triển cá nhân:
+    <a href="https://kamenrider.us/storage/images/kamen-rider-wizard.png" target="_blank">Trở thành Code </a> </p>
+</body>
+</html>
+<script>
+    var cv=document.getElementById("cv");
+    cv.addEventListener("mouseover",mouseover);
+    cv.addEventListener("mouseout",mouseout);
+    function mouseover(){
+        document.getElementById("cv").style.color="red";
+    }
+    function mouseout(){
+        document.getElementById("cv").style.color="black";
+    }
+</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ứng dụng vui DoYouLoveMe</title>
+</head>
+<body>
+<H1 style="left: 220px; top: 175px;position: relative">
+    Do You Love Me?
+</H1>
+<button type="button" onclick="yes()" style="top: 235px; left: 285px; position: relative">YES</button>
+<button id="btnno" type="button" value="No" onmouseover="no()" style="left: 360px; top: 235px;position: relative">NO</button>
+</body>
+<script>
+    function no() {
+        var x = Math.round(Math.random() * window.innerWidth);
+        var y = Math.round(Math.random() * window.innerHeight);
+        document.getElementById("btnno").style.left = x + 'px';
+        document.getElementById("btnno").style.top = y + 'px';
+    }
+
+    function yes() {
+        alert("you are right")
+    }
+</script>
+</html>

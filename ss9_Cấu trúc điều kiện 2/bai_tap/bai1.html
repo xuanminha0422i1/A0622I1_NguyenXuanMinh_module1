@@ -5,27 +5,25 @@
     <title>Tính chỉ số cân nặng của cơ thể</title>
 </head>
 <body>
-<div>
-<h3>Nhập chiều cao (M)</h3>
+<p>height</p>
 <input type="text" id="height">
-<h3>Nhập cân nặng (Kg)</h3>
+<p>weight</p>
 <input type="text" id="weight">
-<br>
-<br>
-<button onclick="ClickMe();">Click Me!!</button>
-<br>
-<br>
-<p id="result"></p>
-</div>
+<button type="button" onclick="chisobmi()">Tinh BMI</button>
 <script>
-    function clickMe() {
-        let height = document.getElementById('height').value;
-        let weight = document.getElementById('weight').value;
-        let bmi = weight / (height * height);
-        if (bmi < 18.5);
-        document.getElementById('result').interHTML=bmi.toFixed(3)+:"Underweight"
-
-
+    function chisobmi() {
+        let height= document.getElementById("height").value;
+        let weight=document.getElementById("weight").value;
+        let h=parseInt(height);
+        let w=parseInt(weight);
+        let bmi=weight/(height^2);
+        if (bmi<18.5)
+            (document.write("your body underweight"));
+        else if (bmi<25.0)
+            (document.write("your body normal"));
+        else if (bmi<30.0)
+            (document.write("your body overweight"));
+        else (document.write("you obese"));
     }
 </script>
 </body>

@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Luyện tập mảng 2-bai5</title>
 </head>
 <body>
-$END$
+<input type="text" id="chuoi1">
+<input type="text" id="chuoi2">
+<button type="button" onclick="sosanh()" > kiem tra </button>
+<script>
+function sosanh() {
+let text1=document.getElementById("chuoi1").value;
+let text2=document.getElementById("chuoi2").value;
+if (text1==text2){
+alert("chuoi giong nhau");
+}
+else alert("chuoi khac nhau");
+}
+</script>
 </body>
 </html>

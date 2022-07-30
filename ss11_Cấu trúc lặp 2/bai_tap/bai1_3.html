@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Luyện tập vòng lặp 01_bai3</title>
 </head>
 <body>
-$END$
+<script>
+    let n1=0;
+    let n2=1;
+    let nextTerm;
+    for(let i=1;i<=20;i++){
+        document.write(n1+ " ");
+        nextTerm = n1+n2;
+        n1 = n2;
+        n2 = nextTerm;
+    }
+</script>
 </body>
 </html>

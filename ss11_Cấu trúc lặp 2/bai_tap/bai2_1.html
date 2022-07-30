@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Luyện tập vòng lặp 02_bai1</title>
 </head>
 <body>
-$END$
+<script>
+    let number= prompt("Nhập số lượng số Finonaci cần hiển thị");
+    let n=0;
+    let n1=0;
+    let n2=0;
+    let finonaci=" ";
+    for(i=0;i<number;i++){
+        if(i==0){
+            n=1;
+            n2=1;
+            finonaci +=n+ " ";
+        }else{
+            n=n1+n2;
+            n1=n2;
+            n2=n;
+            finonaci +=n+" ";
+            console.log(i+" = "+n);
+        }
+    }
+    document.write(finonaci)
+</script>
 </body>
 </html>

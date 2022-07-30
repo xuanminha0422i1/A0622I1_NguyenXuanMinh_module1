@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Luyện tập vòng lặp 01_bai6</title>
 </head>
 <body>
-$END$
+<script>
+    let day= " "
+    let tong=0;
+    for (let i=1;i<30;i++){
+        if(i % 7 !== 0){
+            console.log(i);
+        }else{
+            tong+=i;
+            day+= i + " "
+        }
+    }
+    document.write("Dãy số chia hết cho 7: "+day+"<br>");
+    document.write("Tổng các số chia hết cho 7: "+tong);
+</script>
 </body>
 </html>

@@ -6,9 +6,18 @@
 </head>
 <body>
 <script>
-
-
-</script>
-
+    let nhietDo =prompt("Nhập nhiệt độ");
+    while (nhietDo>100 || nhietDo<20) {
+        if (nhietDo > 100) {
+            alert("Cần giảm nhiệt độ")
+            nhietDo =prompt("Nhập nhiệt độ");
+        }
+        if (nhietDo < 20) {
+            alert("Cần tăng nhiệt độ")
+            nhietDo =prompt("Nhập nhiệt độ");
+        }
+        alert("Nhiệt độ bình thường")
+    }
+    </script>
 </body>
 </html>

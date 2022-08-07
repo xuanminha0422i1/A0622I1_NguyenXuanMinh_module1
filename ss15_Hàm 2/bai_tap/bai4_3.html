@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Luyện tập và sử dụng hàm 2 - bai3</title>
 </head>
 <body>
-$END$
+<script>
+    let s=1;
+    let b=giaiThua(parseInt(prompt("nhap so can tinh")));
+    alert(b);
+    function giaiThua(a) {
+        for (let i=1;i<=a;i++){
+            s=s*i;
+        }
+        return s;
+    }
+</script>
 </body>
 </html>

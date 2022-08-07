@@ -2,9 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Hàm kiểm tra số nguyên</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    for (let i=1;i<10000;i++)
+    {
+        kiemtrasnt(i);
+    }
+    function kiemtrasnt(n) {
+        {
+
+            var flag = true;
+
+
+            if (n < 2){
+                flag = false;
+            }
+            else{
+
+                for (var i = 2; i < n-1; i++)
+                {
+                    if (n % i == 0){
+                        flag = false;
+                        break;
+                    }
+                }
+            }
+
+
+            if (flag == true){
+                document.write(n + " là số nguyên tố <br/>");
+            }
+            else{
+                document.write(n + " không phải là số nguyên tố <br/>");
+            }
+        }
+    }
+</script>
 </html>

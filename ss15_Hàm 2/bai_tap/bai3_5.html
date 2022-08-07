@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Luyện tập và sử dụng hàm 1 - bai5</title>
 </head>
 <body>
-$END$
+<input type="text" id="sao" onchange="sao(this.value)">
+<script>
+    let a=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" , "Regulus"];
+    let b=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    function sao(sao) {
+
+        for (let i=0;i<a.length;i++)
+        {
+            if (a[i] == sao){
+                alert(b[i]);
+            }
+        }
+    }
+</script>
 </body>
 </html>

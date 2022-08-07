@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Luyện tập và sử dụng hàm 2 - bai9</title>
 </head>
 <body>
-$END$
+<script>
+    let inputChar= TraCuu(prompt("nhap ki tu can kiem tra"));
+    function TraCuu(b) {
+        let e = ["h","j","s","a","a","a","g","i"];
+        let count=0;
+        for (let i=0;i<e.length;i++){
+            if (e[i]==b){
+                count++;
+            }
+        }
+        if (count==0){
+            document.write(-1);
+        }
+        else {
+            document.write("so lan xuat hien la "+count);}
+
+    }
+</script>
 </body>
 </html>

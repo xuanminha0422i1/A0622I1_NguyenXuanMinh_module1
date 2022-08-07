@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Luyện tập và sử dụng hàm 2 - bai5</title>
 </head>
 <body>
-$END$
+<script>
+    let min= min3(prompt("nhap so thu 1"),prompt("nhap so thu 2"),prompt("nhap so thu 3"));
+    alert(min)
+    function min2(a,b) {
+        return a<b? a:b;
+    }
+    function min3(a,b,c) {
+        return(min2(a,min2(b,c)));
+    }
 </body>
 </html>

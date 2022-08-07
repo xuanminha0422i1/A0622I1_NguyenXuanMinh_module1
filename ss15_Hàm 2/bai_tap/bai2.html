@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Move between feet and met</title>
 </head>
 <body>
-$END$
+<p> Nhap Gia Tri Can Doi </p>
+<input type="text" id="n">
+<button type="button" onclick="feettometer()">feettometer</button>
+<button type="button" onclick="metertofeet()">metertofeet</button>
+<script>
+
+    function feettometer(feet) {
+        let n= parseFloat(document.getElementById("n").value);
+        return  document.write("ket qua la "+n*3.297);
+    }
+    function metertofeet(meter) {
+        let n= parseFloat(document.getElementById("n").value);
+        return document.write("ket qua la "+n/3.297);
+    }
+</script>
 </body>
 </html>

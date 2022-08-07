@@ -5,7 +5,15 @@
     <title>Dictionary</title>
 </head>
 <body>
-
-
+<script>
+    let engWords = ['start','hello','end'];
+    let vnWords = ['bắt đầu','xin chào','kết thúc'];
+    let searchWords = prompt("nhập từ muốn tìm kiếm",'');
+    for(let i = 0;i<=engWords.length;i++){
+        if(engWords[i]===searchWords){
+            console.log(vnWords[i])
+        }
+    }
+</script>
 </body>
 </html>

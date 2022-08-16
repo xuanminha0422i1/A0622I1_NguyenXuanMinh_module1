@@ -2,9 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva</title>
 </head>
 <body>
-$END$
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+
+        decrease() {
+            if (!this.isEmpty()) {
+                this.weight--;
+            }
+        }
+
+        isEmpty() {
+            if (this.weight > 0) {
+                return true;
+            } else return false;
+        }
+
+        getApple() {
+            return this.weight;
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        isMale() {
+            if (this.gender == true) {
+                document.write("is man");
+            } else document.write("is woman")
+        }
+
+        checkApple(tao) {
+            if(tao.getApple(tao)){
+                return true;
+            }
+            else return false;
+
+        }
+
+        eat(apple) {
+            if (this.checkApple(apple)) {
+                apple.decrease();
+                this.weight++;
+                console.log(this.weight);
+
+            } else {
+                alert("het")
+            }
+        }
+
+        say(str) {
+            alert(str);
+        }
+
+        name() {
+            return this.name();
+        }
+
+    }
+
+    let apple1 = new Apple(20);
+    let human1 = new Human("hai", true, 50)
+    human1.isMale();
+    human1.checkApple(apple1)
+    human1.eat(apple1);
+</script>
 </body>
 </html>

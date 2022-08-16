@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<canvas id="exampleCanvas" width="100" height="50">
+</canvas>
+<script>
+
+    class Rectangle{
+        constructor(chieuDai,chieuRong) {
+            this.chieuDai= chieuDai;
+            this.chieuRong= chieuRong;
+        }
+
+        circuit(){
+            return (this.chieuDai+this.chieuRong)*2;
+        }
+        area(){
+            return (this.chieuRong*this.chieuDai);
+        }
+
+    }
+    let rectangle= new Rectangle(prompt("so a"),prompt("so b"));
+    area=rectangle.area();
+    circuit=rectangle.circuit();
+    document.write("chu vi la"+ circuit + " dien tich la "+ area)
+    document.write("<br><canvas id=\"canvasId\" width="+"\""+rectangle.chieuDai+"\""+" height="+"\""+rectangle.chieuRong+"\""+" style=\"border:1px solid #c3c3c3;\"></canvas>")
+    let context = document.getElementById("canvasId").getContext("2d")
+</script>
+</body>
+</html>
